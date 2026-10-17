@@ -1,0 +1,25 @@
+{
+  "name": "projet_js_laurenne",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawsondjeckylaurenne/cinema-OMDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawsondjeckylaurenne/cinema-OMDB/issues"
+  },
+  "homepage": "https://github.com/lawsondjeckylaurenne/cinema-OMDB#readme",
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
