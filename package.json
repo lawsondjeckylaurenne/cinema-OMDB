@@ -1,9 +1,8 @@
 {
-  "name": "projet_js_laurenne",
+  "name": "cinema-omdb",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
-  "main": "index.js",
+  "description": "Une application de cinéma permettant aux clients de visualiser les films disponibles. ",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -13,7 +12,7 @@
     "url": "git+https://github.com/lawsondjeckylaurenne/cinema-OMDB.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "LAWSON-DJECKY Laurenne",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lawsondjeckylaurenne/cinema-OMDB/issues"
