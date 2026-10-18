@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+
+:root {
+    --bleu-nuit: #00134d;
+    --bleu-fonce: #1b2348;
+    --bleu-noir: #0f1a2e;
+    --ardoise: #1e2a3c;
+    --vert-fonce: #1e3d24;
+    --gris: #444444;
+    --creme: #ffe3b3;
+    --jaune: #fde033;
+    --blanc: #ffffff;
+
+    --police-texte: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --police-logo: 'Tangerine', cursive;
+
+    --rayon: 8px;
+    --espace: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--police-texte);
+    background-color: var(--bleu-noir);
+    color: var(--creme);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.conteneur {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--espace);
+}
+
+/* Boutons */
+
+.bouton {
+    display: inline-block;
+    background-color: var(--jaune);
+    color: var(--bleu-nuit);
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: var(--rayon);
+    font-family: var(--police-texte);
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bouton:hover {
+    background-color: var(--creme);
+}
+
+.bouton--secondaire {
+    background-color: transparent;
+    color: var(--jaune);
+    border: 2px solid var(--jaune);
+}
+
+.bouton--secondaire:hover {
+    background-color: var(--jaune);
+    color: var(--bleu-nuit);
+}
+
+/* ---------- Entete ---------- */
+
+.entete {
+    background-color: var(--bleu-nuit);
+    padding: var(--espace) 0;
+}
+
+.entete__conteneur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.entete__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.entete__logo-image {
+    width: 40px;
+}
+
+.entete__logo-texte {
+    font-family: var(--police-logo);
+    font-size: 2.5rem;
+    color: var(--jaune);
+}
+
+.menu-principal {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-lien {
+    color: var(--creme);
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+}
+
+.menu-lien:hover,
+.menu-lien[aria-current="page"] {
+    color: var(--jaune);
+    border-bottom: 2px solid var(--jaune);
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    min-height: 250px;
+    background-color: var(--bleu-fonce);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.hero__texte {
+    position: relative;
+    padding: var(--espace);
+}
+
+.hero__titre {
+    font-size: 1.8rem;
+    color: var(--blanc);
+    margin-bottom: var(--espace);
+}
+
+/* Sections */
+
+.section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section__titre {
+    font-size: 1.5rem;
+    color: var(--jaune);
+    margin-bottom: 1.5rem;
+}
+
+/* Grille et cartes de films */
+
+.film-grille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espace);
+    margin-bottom: 1.5rem;
+}
+
+.film-carte {
+    background-color: var(--ardoise);
+    border-radius: var(--rayon);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.film-carte__image {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    background-color: var(--gris);
+}
+
+.film-carte__contenu {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.film-carte__nom {
+    font-size: 1rem;
+    color: var(--blanc);
+}
+
+.film-carte__resume {
+    font-size: 0.85rem;
+}
+
+.film-carte__bouton {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+/* FAQ */
+
+.bloc-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.bloc-faq h2 {
+    color: var(--jaune);
+    margin-bottom: var(--espace);
+}
+
+.bloc-question {
+    font-weight: bold;
+    color: var(--blanc);
+    margin-top: var(--espace);
+}
+
+.bloc-reponse {
+    padding-left: var(--espace);
+    border-left: 3px solid var(--jaune);
+}
+
+/* Recherche */
+
+.recherche {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: var(--espace);
+}
+
+.recherche__champ {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid var(--bleu-fonce);
+    border-radius: var(--rayon);
+}
+
+.recherche__champ:focus {
+    outline: none;
+    border-color: var(--jaune);
+}
+
+.recherche__message {
+    margin-bottom: var(--espace);
+    font-style: italic;
+}
+
+/* Page film */
+
+.lien-retour {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--jaune);
+    text-decoration: none;
+}
+
+.lien-retour:hover {
+    text-decoration: underline;
+}
+
+.film-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.film-detail__poster {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: var(--rayon);
+}
+
+.film-detail__titre {
+    font-size: 1.8rem;
+    color: var(--blanc);
+    margin-bottom: var(--espace);
+}
+
+.film-detail__ligne {
+    margin-bottom: 0.5rem;
+}
+
+.film-detail__ligne strong {
+    color: var(--jaune);
+}
+
+.film-detail__sous-titre {
+    font-size: 1.2rem;
+    color: var(--jaune);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.film-detail__notes li {
+    background-color: var(--ardoise);
+    padding: 0.5rem var(--espace);
+    border-radius: var(--rayon);
+    margin-bottom: 0.5rem;
+}
+
+.film-detail__message {
+    color: var(--jaune);
+}
+
+/* Pied de page */
+
+.pied-de-page {
+    background-color: var(--bleu-nuit);
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.pied-de-page__conteneur {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pied-de-page__colonne h3 {
+    color: var(--jaune);
+    margin-bottom: 0.5rem;
+}
+
+.pied-de-page__colonne a {
+    text-decoration: none;
+}
+
+.pied-de-page__colonne a:hover {
+    color: var(--jaune);
+}
+
+.pied-de-page__reseaux {
+    display: flex;
+    gap: var(--espace);
+}
+
+.pied-de-page__reseaux-icone {
+    width: 30px;
+}
+
+.pied-de-page__bas {
+    text-align: center;
+    font-size: 0.85rem;
+    padding: var(--espace);
+    margin-top: 2rem;
+    border-top: 1px solid var(--bleu-fonce);
+}
+
+/* Tablette */
+
+@media (min-width: 600px) {
+    .entete__conteneur {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .film-grille {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        min-height: 350px;
+    }
+
+    .hero__titre {
+        font-size: 2.5rem;
+    }
+
+    .recherche__champ {
+        max-width: 500px;
+    }
+
+    .pied-de-page__conteneur {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Ordinateur */
+
+@media (min-width: 900px) {
+    .film-grille {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .bloc-faq {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .bloc-faq img {
+        width: 40%;
+    }
+
+    .film-detail {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .film-detail__poster {
+        margin: 0;
+    }
+}

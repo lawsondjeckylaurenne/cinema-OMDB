@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film-Cinéma</title>
+    <link rel="stylesheet" href="/src/css/style.css"/>
+</head>
+<body>
+    <header class="entete">
+        <div class="entete__conteneur conteneur"> <!-- conteneur en grille : logo à gauche, menu à droite -->
+            <a href="index.html" class="entete__logo">
+                <img src="" alt="Logo du cinema Le Palace" class="entete__logo-image" /> 
+                <span class="entete__logo-texte">Le Palace</span> 
+            </a> 
+            <nav class="menu-principal" aria-label="Menu principal"> <!--aria-label pour l'accessibilité -->
+                <a href="index.html" class="menu-lien">Accueil</a>
+                <a href="search.html" class="menu-lien">Recherche</a> 
+            </nav> 
+        </div> 
+    </header>
+
+    <main id="contenu">
+        <section class="section conteneur">
+            <a href="index.html" class="lien-retour">&larr; Retour à l'accueil</a>
+            <p id="message-film" class="film-detail__message"></p>
+
+            <article id="details-film" class="film-detail">
+                <img src="" alt="" id="film-poster" class="film-detail__poster"/>
+                <div class="film-detail__infos">
+                    <h1 id="film-titre" class="film-detail__titre"></h1>
+
+                    <p class="film-detail__ligne"><strong>Genre :</strong> <span id="film-genre"></span></p>
+                    <p class="film-detail__ligne"><strong>Acteurs :</strong> <span id="film-acteurs"></span></p>
+                    <p class="film-detail__ligne"><strong>Sortie DVD :</strong> <span id="film-dvd"></span></p>
+
+                    <h2 class="film-detail__sous-titre">Résumé</h2>
+                    <p id="film-resume" class="film-detail__resume"></p>
+
+                    <h2 class="film-detail__sous-titre">Notes</h2>
+                    <ul id="film-notes" class="film-detail__notes"></ul>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="pied-de-page"> 
+        <div class="pied-de-page__conteneur conteneur"> 
+
+            <div class="pied-de-page__colonne"> 
+                <h3>Navigation</h3> 
+                <ul> 
+                    <li><a href="index.html">Accueil</a></li> 
+                    <li><a href="search.html">Recherche</a></li> 
+                </ul> 
+            </div> 
+
+            <div class="pied-de-page__colonne"> 
+                <h3>Le Palace</h3> 
+                <ul> 
+                    <li><a href="contact.html">Nous contacter</a></li> 
+                    <li><a href="rapport-accessibilite.html">Accessibilité du site</a></li> 
+                    <li><a href="mentions-legales.html">Mentions légales</a></li> 
+                </ul> 
+            </div> 
+
+            <div class="pied-de-page__colonne"> 
+                <h3>Suivez-nous</h3> 
+                <div class="pied-de-page__reseaux">
+                    <a href="404.html" aria-label="Facebook"><img src="/images/facebook.png" alt="" class="pied-de-page__reseaux-icone" /></a>
+                    <a href="404.html" aria-label="Instagram"><img src="/images/instagram.png" alt="" class="pied-de-page__reseaux-icone" /></a>
+                    <a href="404.html" aria-label="TikTok"><img src="/images/tiktok.png" alt="" class="pied-de-page__reseaux-icone" /></a>
+                </div>
+            </div> 
+
+        </div> 
+
+        <div class="pied-de-page__bas"> <!-- bandeau bas du footer -->
+            <p>&copy; 2026 Le Palace - Tous Droits Reservés.</p> <!-- copyright -->
+            <p>Realiser par Virkas</p> 
+        </div> 
+    </footer> 
+
+    <script type="module" src="/src/js/pages/movie.js"></script>
+
+</body>
+</html>

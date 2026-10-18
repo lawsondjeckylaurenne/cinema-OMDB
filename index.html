@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil-Cinéma</title>
+    <link rel="stylesheet" href="/src/css/style.css"/>
+</head>
+<body>
+    <header class="entete">
+        <div class="entete__conteneur conteneur"> <!-- conteneur en grille : logo à gauche, menu à droite -->
+            <a href="index.html" class="entete__logo">
+                <img src="" alt="Logo du cinema Le Palace" class="entete__logo-image" /> 
+                <span class="entete__logo-texte">Le Palace</span> 
+            </a> 
+            <nav class="menu-principal" aria-label="Menu principal"> <!--aria-label pour l'accessibilité -->
+                <a href="index.html" class="menu-lien" aria-current="page">Accueil</a> 
+                <a href="search.html" class="menu-lien">Recherche</a> 
+            </nav> 
+        </div> 
+    </header> 
+
+    <main id="contenu">
+
+        <section class="hero"> 
+            <img src="" alt=" Film de la saison actuel au cinema" /> 
+            <div class="hero__texte"> 
+                <h1 class="hero__titre">Guardians of The Galaxy</h1>
+                <a href="search.html" class="bouton">Rechercher votre film</a> 
+            </div> 
+        </section> 
+
+        <section class="section conteneur">
+            <h2 id="titre-tendance">Les films tendances</h2>
+
+            <div id="film-tendances"></div> 
+            <button type="button" id="bouton-plus-films" class="bouton">Voir plus de films de 2024</button>
+        </section> 
+
+        <section class="section conteneur"> 
+            <div class="bloc-faq__contenu"> 
+                <div class="bloc-questions_reponses"> 
+                    <h2 id="titre-faq">Plus de questions ?</h2> 
+                    <div class="bloc-question">Quels sont les tarifs pour une place de cinéma ?</div>
+                    <div class="bloc-reponse">Les prix dépendent de votre profil (adulte = 15€, enfant = 5€, étudiant = 8€)</div>
+                    <div class="bloc-question">Comment connaître les sorties cinéma ?</div>
+                    <div class="bloc-reponse">Les prochaines sorties cinéma sont mises en avant sur notre site. Rendez-vous sur la page "Film" pour tout savoir sur les films à venir, les bandes-annonces et les dates de sortie.</div>
+                    <div class="bloc-question">Comment puis-je retrouver où se trouve Le Palace ?</div>
+                    <div class="bloc-reponse">Pour retrouver l'emplacement exact du ciné Le Palace, tapez l'adresse suivante sur votre maps: 69100, 87 rue octavie ou allez dans la section nous contacter en bas de la page pour plus d'information.</div>
+                </div> 
+                <img src="/images/imageQuestion.png" alt="" class="" /> 
+            </div> 
+        </section> 
+    </main> 
+
+    <footer class="pied-de-page"> 
+        <div class="pied-de-page__conteneur conteneur"> 
+
+            <div class="pied-de-page__colonne"> 
+                <h3>Navigation</h3> 
+                <ul> 
+                    <li><a href="index.html">Accueil</a></li> 
+                    <li><a href="search.html">Recherche</a></li> 
+                </ul> 
+            </div> 
+
+            <div class="pied-de-page__colonne"> 
+                <h3>Le Palace</h3> 
+                <ul> 
+                    <li><a href="contact.html">Nous contacter</a></li> 
+                    <li><a href="rapport-accessibilite.html">Accessibilité du site</a></li> 
+                    <li><a href="mentions-legales.html">Mentions légales</a></li> 
+                </ul> 
+            </div> 
+
+            <div class="pied-de-page__colonne"> 
+                <h3>Suivez-nous</h3> 
+                <div class="pied-de-page__reseaux">
+                    <a href="404.html" aria-label="Facebook"><img src="/images/facebook.png" alt="" class="pied-de-page__reseaux-icone" /></a>
+                    <a href="404.html" aria-label="Instagram"><img src="/images/instagram.png" alt="" class="pied-de-page__reseaux-icone" /></a>
+                    <a href="404.html" aria-label="TikTok"><img src="/images/tiktok.png" alt="" class="pied-de-page__reseaux-icone" /></a>
+                </div>
+            </div> 
+
+        </div> 
+
+        <div class="pied-de-page__bas"> <!-- bandeau bas du footer -->
+            <p>&copy; 2026 Le Palace - Tous Droits Reservés.</p> <!-- copyright -->
+            <p>Realiser par Virkas</p> 
+        </div> 
+    </footer> 
+
+    <script type="module" src="/src/js/pages/index.js"></script>
+
+</body>
+</html>
