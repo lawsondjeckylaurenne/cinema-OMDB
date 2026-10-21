@@ -10,7 +10,7 @@
     <header class="entete">
         <div class="entete__conteneur conteneur"> <!-- conteneur en grille : logo à gauche, menu à droite -->
             <a href="index.html" class="entete__logo">
-                <img src="" alt="Logo du cinema Le Palace" class="entete__logo-image" /> 
+                <img src="/images/logo.jpeg" alt="Logo du cinema Le Palace" class="entete__logo-image" /> 
                 <span class="entete__logo-texte">Le Palace</span> 
             </a> 
             <nav class="menu-principal" aria-label="Menu principal"> <!--aria-label pour l'accessibilité -->
@@ -22,36 +22,33 @@
 
     <main id="contenu">
 
-        <section class="hero"> 
-            <img src="" alt=" Film de la saison actuel au cinema" /> 
-            <div class="hero__texte"> 
-                <h1 class="hero__titre">Guardians of The Galaxy</h1>
-                <a href="search.html" class="bouton">Rechercher votre film</a> 
-            </div> 
-        </section> 
+        <section class="hero" aria-label="Films à l'affiche">
+            <div id="hero-slides"></div>
+            <div id="hero-points" class="hero__points"></div>
+        </section>
+
 
         <section class="section conteneur">
-            <h2 id="titre-tendance" class="section__titre">Les films tendances</h2>
-
-
+            <h1 id="titre-tendance" class="section__titre">Les films tendances</h1>
             <div id="films-tendances" class="film-grille"></div>
             <button type="button" id="bouton-plus-films" class="bouton">Voir plus de films de 2024</button>
         </section> 
 
-        <section class="section conteneur"> 
-            <div class="bloc-faq__contenu"> 
-                <div class="bloc-questions_reponses"> 
-                    <h2 id="titre-faq">Plus de questions ?</h2> 
+        <section class="section conteneur">
+            <div class="bloc-faq">
+                <div class="bloc-faq__texte">
+                    <h2 id="titre-faq">Plus de questions ?</h2>
                     <div class="bloc-question">Quels sont les tarifs pour une place de cinéma ?</div>
                     <div class="bloc-reponse">Les prix dépendent de votre profil (adulte = 15€, enfant = 5€, étudiant = 8€)</div>
                     <div class="bloc-question">Comment connaître les sorties cinéma ?</div>
                     <div class="bloc-reponse">Les prochaines sorties cinéma sont mises en avant sur notre site. Rendez-vous sur la page "Film" pour tout savoir sur les films à venir, les bandes-annonces et les dates de sortie.</div>
                     <div class="bloc-question">Comment puis-je retrouver où se trouve Le Palace ?</div>
                     <div class="bloc-reponse">Pour retrouver l'emplacement exact du ciné Le Palace, tapez l'adresse suivante sur votre maps: 69100, 87 rue octavie ou allez dans la section nous contacter en bas de la page pour plus d'information.</div>
-                </div> 
-                <img src="/images/imageQuestion.png" alt="" class="" /> 
-            </div> 
-        </section> 
+                </div>
+                <img src="/images/imageQuestion.png" alt="Illustration de la foire aux questions" class="bloc-faq__image" />
+            </div>
+        </section>
+
     </main> 
 
     <footer class="pied-de-page"> 
