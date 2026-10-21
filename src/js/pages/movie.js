@@ -1,7 +1,7 @@
 import { getMovieById } from '../api/omdb.js'
 import { formatDate } from '../utils/formatDate.js'
 
-const NO_POSTER = '/images/no-poster.png'
+const NO_POSTER = '/images/no-poster.jpg'
 
 const message = document.querySelector('#message-film')
 const details = document.querySelector('#details-film')
