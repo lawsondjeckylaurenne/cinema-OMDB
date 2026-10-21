@@ -1,0 +1,24 @@
+{
+  "name": "cinema-omdb",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Une application de cinéma permettant aux clients de visualiser les films disponibles. ",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawsondjeckylaurenne/cinema-OMDB.git"
+  },
+  "keywords": [],
+  "author": "LAWSON-DJECKY Laurenne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawsondjeckylaurenne/cinema-OMDB/issues"
+  },
+  "homepage": "https://github.com/lawsondjeckylaurenne/cinema-OMDB#readme",
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
