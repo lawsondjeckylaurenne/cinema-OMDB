@@ -7,7 +7,7 @@ Notre projet est une application web conçu pour le cinéma Le palace qui est le
 `https://github.com/lawsondjeckylaurenne/cinema-OMDB.git`
 
 # Auteur
-Laurenne LAWSON-DJECKY en passerelle 3 SUPINFO
+Laurenne Calixte Anoko LAWSON-DJECKY en passerelle 3 SUPINFO
 
 # Technologies
 HTML, CSS, JavaScript (modules ES), Vite, API OMDb
