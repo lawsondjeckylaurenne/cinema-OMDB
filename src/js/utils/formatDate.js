@@ -6,12 +6,14 @@ const MONTHS = {
 export function formatDate(dateText) {
     if (!dateText || dateText === 'N/A') {
         return 'Non disponible'
+    }else{
+
+        const parts = dateText.split(' ')
+        const day = parts[0].padStart(2, '0')
+        const month = MONTHS[parts[1]]
+        const year = parts[2]
+
+        return `${day}/${month}/${year}`
     }
-
-    const parts = dateText.split(' ')
-    const day = parts[0].padStart(2, '0')
-    const month = MONTHS[parts[1]]
-    const year = parts[2]
-
-    return `${day}/${month}/${year}`
-}
+}    
+//fonction qui va permettre de convertir les dates en un format unique
